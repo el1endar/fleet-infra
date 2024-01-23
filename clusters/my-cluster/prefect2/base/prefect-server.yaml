@@ -11,7 +11,7 @@ spec:
       chart: prefect-server
       sourceRef:
         kind: HelmRepository
-        name: prefecthq
+        name: prefecthq-server
         namespace: prefect
       version: "*"
   interval: 1h0m0s
