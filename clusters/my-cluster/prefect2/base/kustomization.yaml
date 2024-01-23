@@ -4,4 +4,4 @@ namespace: prefect
 resources:
 - prefect-helm.yaml
 # - oauth2-proxy.yaml
-- prefect-server.yaml
+# - prefect-server.yaml
