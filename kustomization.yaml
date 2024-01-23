@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: prefect
 resources:
 - flux-system
-- ./prefect2/base
+- prefect2/base
