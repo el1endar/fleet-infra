@@ -1,7 +1,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
-  name: prefecthq-server
+  name: prefect-server
   namespace: prefect
 spec:
   releaseName: prefect
@@ -11,7 +11,7 @@ spec:
       chart: prefect-server
       sourceRef:
         kind: HelmRepository
-        name: prefect-server
+        name: prefecthq
         namespace: prefect
       version: "*"
   interval: 1h0m0s
