@@ -5,13 +5,13 @@ metadata:
   namespace: prefect
 spec:
   releaseName: prefect
-  serviceAccountName: data-engineering
+  # serviceAccountName: data-engineering
   chart:
     spec:
       chart: prefect-server
       sourceRef:
         kind: HelmRepository
-        name: prefecthq-server
+        name: prefecthq
         namespace: prefect
       version: "*"
   interval: 1h0m0s
