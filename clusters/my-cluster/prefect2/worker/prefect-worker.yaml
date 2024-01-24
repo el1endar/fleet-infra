@@ -15,7 +15,6 @@ spec:
       version: "*"
   interval: 1h0m0s
   values:
-    namespaceOverride: "prefect"
     worker:
       apiConfig: server # can be cloud if using prefect-cloud paid version or server for self deployed prefect-server
       config:
