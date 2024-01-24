@@ -4,7 +4,7 @@ metadata:
   name: prefect-worker
   namespace: prefect
 spec:
-  releaseName: prefect
+  releaseName: prefect-worker
   chart:
     spec:
       chart: prefect-worker
