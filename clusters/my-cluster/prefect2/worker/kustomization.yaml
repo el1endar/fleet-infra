@@ -2,6 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: prefect
 resources:
-- flux-system
-- prefect2/server
-- prefect2/worker
+- prefect-helm.yaml
+# - oauth2-proxy.yaml
+- prefect-worker.yaml
