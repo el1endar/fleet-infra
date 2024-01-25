@@ -4,4 +4,4 @@ namespace: prefect
 resources:
 - flux-system
 - prefect2/server
-- prefect2/worker
+# - prefect2/worker
