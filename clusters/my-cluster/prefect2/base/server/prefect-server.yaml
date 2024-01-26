@@ -19,6 +19,6 @@ spec:
     server:
       image:
         prefectTag: 2.14.10-python3.9
-  # https://github.com/PrefectHQ/server/blob/master/helm/prefect-server/values.yaml
+  # https://github.com/PrefectHQ/prefect-helm/blob/main/charts/prefect-server/values.yaml
   # Just values which would be the same in prod and dev
   
