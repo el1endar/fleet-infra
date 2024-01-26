@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: prefect2
 resources:
 - server
-# - worker
+- worker
