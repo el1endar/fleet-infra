@@ -5,6 +5,7 @@ metadata:
   namespace: prefect
 spec:
   releaseName: prefect-server
+  targetNamespace: prefect2
   # serviceAccountName: data-engineering
   chart:
     spec:
