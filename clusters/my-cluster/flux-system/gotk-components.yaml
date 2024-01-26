@@ -13,6 +13,13 @@ metadata:
     pod-security.kubernetes.io/warn-version: latest
   name: flux-system
 ---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    toolkit.fluxcd.io/tenant: data-engineering
+  name: prefect2
+---
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
