@@ -20,4 +20,4 @@ spec:
       config:
         workPool: kubernetes-local-work-pool-1 # work pool which worker will serve
       serverApiConfig:
-        apiUrl: http://10.105.119.203:4200/api # container server address
+        apiUrl: http://10.1.1.7:4200/api # container server address
