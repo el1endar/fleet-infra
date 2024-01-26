@@ -4,3 +4,4 @@ namespace: prefect2
 resources:
 - server
 - worker
+# - oauth2-proxy.yaml
