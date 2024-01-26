@@ -5,5 +5,5 @@ resources:
 - server
 - worker
 # - oauth2-proxy.yaml
-- production
-- local
+# - production
+# - local
