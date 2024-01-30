@@ -20,4 +20,4 @@ spec:
       config:
         workPool: kubernetes-local-work-pool-1 # work pool which worker will serve
       serverApiConfig:
-        apiUrl: http://prefect2.svc.cluster.local:4200/api # container server address
+        apiUrl: http://prefect-server.prefect2.svc.cluster.local:4200/api # container server address
