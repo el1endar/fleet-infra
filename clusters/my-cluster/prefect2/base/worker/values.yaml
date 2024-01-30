@@ -3,4 +3,4 @@ worker:
   config:
     workPool: kubernetes-local-work-pool-1
   serverApiConfig:
-    apiUrl: http://10.105.119.203:4200/api
+    apiUrl: http://10.1.1.20:4200/api
