@@ -17,13 +17,13 @@ spec:
     server:
       image:
         prefectTag: 2.14.10-python3.9
-      prefectApiHost: 127.0.0.2
-      prefectApiUrl: http://127.0.0.2:4200/api
+      # prefectApiHost: 127.0.0.1
+      # prefectApiUrl: http://127.0.0.1:4200/api
       uiConfig:
         enabled: true
-        prefectUiApiUrl: 127.0.0.2:4200/api
+        prefectUiApiUrl: 127.0.0.1:4200/api
         prefectUiStaticDirectory: /ui_build
-        prefectUiUrl: 127.0.0.2
+        prefectUiUrl: "127.0.0.1"
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository

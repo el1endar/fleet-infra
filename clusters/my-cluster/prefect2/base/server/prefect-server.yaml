@@ -25,7 +25,7 @@ spec:
         # -- set PREFECT_UI_ENABLED; enable the UI on the server
         enabled: true
         # -- sets PREFECT_UI_API_URL
-        prefectUiApiUrl: "127.0.0.2/:4200/api"
+        prefectUiApiUrl: "127.0.0.2:4200/api"
         # -- sets PREFECT_UI_URL
         prefectUiUrl: "127.0.0.2"
         # -- sets PREFECT_UI_STATIC_DIRECTORY
