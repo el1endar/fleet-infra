@@ -16,8 +16,8 @@ spec:
   interval: 1h0m0s
   values:
     server:
-      prefectApiUrl: http://127.0.0.2:4200/api        # if we will want run UI together with a server
-      prefectApiHost: "127.0.0.2"
+      prefectApiUrl: http://127.0.0.1:4200/api        # if we will want run UI together with a server
+      prefectApiHost: "127.0.0.1"
       image:
         prefectTag: 2.14.10-python3.9
 
@@ -25,9 +25,9 @@ spec:
         # -- set PREFECT_UI_ENABLED; enable the UI on the server
         enabled: true
         # -- sets PREFECT_UI_API_URL
-        prefectUiApiUrl: "127.0.0.2:4200/api"
+        prefectUiApiUrl: "127.0.0.1:4200/api"
         # -- sets PREFECT_UI_URL
-        prefectUiUrl: "127.0.0.2"
+        prefectUiUrl: "127.0.0.1"
         # -- sets PREFECT_UI_STATIC_DIRECTORY
         prefectUiStaticDirectory: "/ui_build"
       # https://github.com/PrefectHQ/prefect-helm/blob/main/charts/prefect-server/values.yaml
