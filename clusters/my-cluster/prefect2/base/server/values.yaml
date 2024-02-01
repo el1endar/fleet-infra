@@ -1,0 +1,35 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: prefect-server
+  namespace: prefect2
+spec:
+  chart:
+    spec:
+      chart: prefect-server
+      sourceRef:
+        kind: HelmRepository
+        name: prefecthq
+        namespace: prefect2
+  interval: 1h0m0s
+  releaseName: prefect-server
+  values:
+    server:
+      image:
+        prefectTag: 2.14.10-python3.9
+      prefectApiHost: 127.0.0.2
+      prefectApiUrl: http://127.0.0.2:4200/api
+      uiConfig:
+        enabled: true
+        prefectUiApiUrl: 127.0.0.2:4200/api
+        prefectUiStaticDirectory: /ui_build
+        prefectUiUrl: 127.0.0.2
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: prefecthq
+  namespace: prefect2
+spec:
+  interval: 1h
+  url: https://prefecthq.github.io/prefect-helm
