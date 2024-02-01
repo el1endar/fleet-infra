@@ -13,12 +13,21 @@ spec:
         kind: HelmRepository
         name: prefecthq
         namespace: prefect2
-      version: "0.0.0"
   interval: 1h0m0s
   values:
     server:
       image:
         prefectTag: 2.14.10-python3.9
-  # https://github.com/PrefectHQ/prefect-helm/blob/main/charts/prefect-server/values.yaml
-  # Just values which would be the same in prod and dev
+
+    uiConfig:
+      # -- set PREFECT_UI_ENABLED; enable the UI on the server
+      enabled: true
+      # -- sets PREFECT_UI_API_URL
+      prefectUiApiUrl: "localhost:4200/api"
+      # -- sets PREFECT_UI_URL
+      prefectUiUrl: "localhost"
+      # -- sets PREFECT_UI_STATIC_DIRECTORY
+      prefectUiStaticDirectory: "/ui_build"
+    # https://github.com/PrefectHQ/prefect-helm/blob/main/charts/prefect-server/values.yaml
+
   
