@@ -16,8 +16,8 @@ spec:
   interval: 1h0m0s
   values:
     server:
-      prefectApiUrl: http://127.0.0.1:4200/api        # if we will want run UI together with a server
-      prefectApiHost: "127.0.0.1"
+      # prefectApiUrl: http://127.0.0.1:4200/api        # if we will want run UI together with a server
+      # prefectApiHost: "127.0.0.1"
       image:
         prefectTag: 2.14.10-python3.9
 
