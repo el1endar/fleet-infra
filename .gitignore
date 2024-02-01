@@ -1,1 +1,2 @@
-clusters/my-cluster/prefect2/prod/prefect-server-patch.yaml
+clusters/my-cluster/prefect2/prod
+help_files/
