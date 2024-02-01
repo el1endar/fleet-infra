@@ -21,9 +21,9 @@ spec:
       # prefectApiUrl: http://127.0.0.1:4200/api
       uiConfig:
         enabled: true
-        prefectUiApiUrl: 127.0.0.1:4200/api
-        prefectUiStaticDirectory: /ui_build
-        prefectUiUrl: "127.0.0.1"
+        # prefectUiApiUrl: 127.0.0.1:4200/api
+        # prefectUiStaticDirectory: /ui_build
+        # prefectUiUrl: "127.0.0.1"
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
