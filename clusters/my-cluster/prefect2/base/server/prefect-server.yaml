@@ -32,10 +32,10 @@ spec:
       #   prefectUiStaticDirectory: "/ui_build"
       # # https://github.com/PrefectHQ/prefect-helm/blob/main/charts/prefect-server/values.yaml
       postgresql:
-        enabled: true
-      #   # auth:
-      #   #   database: prefect2    # TODO create this database, because now we have only postgres database on prefect2 server
-      #   #   existingSecret: prefect2-postgresql-secret
-      #   #   username: mike
-      #   # externalHostname: prefect2.postgres.database.azure.com
         useSubChart: false
+        auth:
+          database: mike-prefect2    # TODO create this database, because now we have only postgres database on prefect2 server
+          existingSecret: mike-pg-secret
+          username: mike
+      #   # externalHostname: prefect2.postgres.database.azure.com
+        
