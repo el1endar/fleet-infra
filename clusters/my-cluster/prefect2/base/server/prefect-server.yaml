@@ -21,13 +21,20 @@ spec:
       image:
         prefectTag: 2.14.10-python3.9
 
-      uiConfig:
-        # -- set PREFECT_UI_ENABLED; enable the UI on the server
-        enabled: true
-        # -- sets PREFECT_UI_API_URL
-        prefectUiApiUrl: "https://prefect.popcore.com:4200/api"
-        # -- sets PREFECT_UI_URL
-        prefectUiUrl: "https://prefect.popcore.com/"
-        # -- sets PREFECT_UI_STATIC_DIRECTORY
-        prefectUiStaticDirectory: "/ui_build"
-      # https://github.com/PrefectHQ/prefect-helm/blob/main/charts/prefect-server/values.yaml
+      # uiConfig:
+      #   # -- set PREFECT_UI_ENABLED; enable the UI on the server
+      #   enabled: true
+      #   # -- sets PREFECT_UI_API_URL
+      #   prefectUiApiUrl: "https://prefect.popcore.com:4200/api"
+      #   # -- sets PREFECT_UI_URL
+      #   prefectUiUrl: "https://prefect.popcore.com/"
+      #   # -- sets PREFECT_UI_STATIC_DIRECTORY
+      #   prefectUiStaticDirectory: "/ui_build"
+      # # https://github.com/PrefectHQ/prefect-helm/blob/main/charts/prefect-server/values.yaml
+      postgresql:
+        # auth:
+        #   database: prefect2    # TODO create this database, because now we have only postgres database on prefect2 server
+        #   existingSecret: prefect2-postgresql-secret
+        #   username: mike
+        # externalHostname: prefect2.postgres.database.azure.com
+        useSubChart: false
