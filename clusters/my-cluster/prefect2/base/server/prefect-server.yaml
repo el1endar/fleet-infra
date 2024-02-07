@@ -38,4 +38,4 @@ spec:
       #   #   existingSecret: prefect2-postgresql-secret
       #   #   username: mike
       #   # externalHostname: prefect2.postgres.database.azure.com
-      #   useSubChart: false
+        useSubChart: false
